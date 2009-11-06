@@ -10,11 +10,17 @@ This version of Savage Beast has been tested working in Rails 2.3 without
 the Engines plugin, and in Rails 2.0-2.2 with use of the Engines plugin.
 
 See http://www.williambharding.com/blog/?p=100 for install instructions
-See http://code.google.com/p/savage-beast-2/ to grab the latest version
 
 Please post any comments or suggestions to the blog post.  If you would like
 to make a contribution to improve this plugin, send me an email via the site.
 
+=== On Rails 2.2 and Earlier ===
 If you're rolling Rails 2.2 or earlier, be sure you carefully follow the
 Engines installation instructions!  That
 line to add to your environment file is easily missed.
+
+=== On Rails 2.0 ===
+If you're running Rails 2.0, you're probably better off using the version
+at http://code.google.com/p/savage-beast-2/, which was specifically tested with
+Rails 2.0.
+
