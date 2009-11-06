@@ -38,7 +38,7 @@ module SavageBeast::AuthenticationSystem
     end
     
     def logged_in?
-      #current_user != 0
+      current_user ? true : false #current_user != 0
     end
     
     def admin?

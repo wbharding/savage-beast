@@ -1,5 +1,7 @@
 ActionView::Base.send :include, SavageBeast::AuthenticationSystem
 ActionController::Base.send :include, SavageBeast::AuthenticationSystem
+# You need to include SavageBeast::ApplicationHelper.  Doing it this way
+# makes it be unincluded after the second request when working in development environment.
 #ApplicationHelper.send :include, SavageBeast::ApplicationHelper
 
 # FIX for engines model reloading issue in development mode
