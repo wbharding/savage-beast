@@ -1,8 +1,20 @@
+=== Savage Beast ===
+
+Savage Beast is a Rails Message forum plugin based on the popular Beast plugin.
+The Savage Beast plugin has been installed in hundreds of Rails sites, partially
+because it's the only viable choice for a message forum plugin, but also because
+it incorporates a lot of features that would be a time-consuming headache for you
+to implement yourself.
+
+This version of Savage Beast has been tested working in Rails 2.3 without
+the Engines plugin, and in Rails 2.0-2.2 with use of the Engines plugin.
+
 See http://www.williambharding.com/blog/?p=100 for install instructions
 See http://code.google.com/p/savage-beast-2/ to grab the latest version
 
 Please post any comments or suggestions to the blog post.  If you would like
 to make a contribution to improve this plugin, send me an email via the site.
 
-And be sure you carefully follow the Engines installation instructions!  That
+If you're rolling Rails 2.2 or earlier, be sure you carefully follow the
+Engines installation instructions!  That
 line to add to your environment file is easily missed.
