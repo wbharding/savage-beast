@@ -62,7 +62,7 @@ end
 
 class CreateSavageTables < ActiveRecord::Migration
 	def self.up
-		create_table "forums", :force => true do |t|
+		create_table "forums" do |t|
 	    t.string  "name"
 	    t.string  "description"
 	    t.integer "topics_count",     :default => 0
@@ -71,20 +71,20 @@ class CreateSavageTables < ActiveRecord::Migration
 	    t.text    "description_html"
 	  end
 
-	  create_table "moderatorships", :force => true do |t|
+	  create_table "moderatorships" do |t|
 	    t.integer "forum_id"
 	    t.integer "user_id"
 	  end
 
 	  add_index "moderatorships", ["forum_id"], :name => "index_moderatorships_on_forum_id"
 
-	  create_table "monitorships", :force => true do |t|
+	  create_table "monitorships" do |t|
 	    t.integer "topic_id"
 	    t.integer "user_id"
 	    t.boolean "active",   :default => true
 	  end
 
-	  create_table "posts", :force => true do |t|
+	  create_table "posts" do |t|
 	    t.integer  "user_id"
 	    t.integer  "topic_id"
 	    t.text     "body"
@@ -98,7 +98,7 @@ class CreateSavageTables < ActiveRecord::Migration
 	  add_index "posts", ["user_id", "created_at"], :name => "index_posts_on_user_id"
 	  add_index "posts", ["topic_id", "created_at"], :name => "index_posts_on_topic_id"
 
-	  create_table "topics", :force => true do |t|
+	  create_table "topics" do |t|
 	    t.integer  "forum_id"
 	    t.integer  "user_id"
 	    t.string   "title"

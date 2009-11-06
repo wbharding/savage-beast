@@ -9,7 +9,7 @@ to implement yourself.
 This version of Savage Beast has been tested working in Rails 2.3 without
 the Engines plugin, and in Rails 2.0-2.2 with use of the Engines plugin.
 
-See http://www.williambharding.com/blog/?p=100 for install instructions
+See http://www.williambharding.com/blog/rails/savage-beast-23-a-rails-22-23-message-forum-plugin/ for install instructions
 
 Please post any comments or suggestions to the blog post.  If you would like
 to make a contribution to improve this plugin, send me an email via the site.
