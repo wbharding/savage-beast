@@ -39,7 +39,7 @@
 <% if logged_in? %>
 <p style="float:right; margin-top:0;"><%= link_to 'New topic'[], new_forum_topic_path(@forum), :class => "utility" %></p>
 <% end %>
-<%= pagination @topics %>
+<%= will_paginate @topics %>
 <% end -%>
 
 <table border="0" cellspacing="0" cellpadding="0" class="wide topics">
@@ -87,8 +87,7 @@
 <% end %>
 </table>
 
-<%= next_page @topics %>
-<%= pagination @topics %>
+<%= will_paginate @topics %>
 
 <% if logged_in? %>
 <p><%= link_to 'New topic'[:new_topic], new_forum_topic_path(@forum), :class => "utility" %></p>

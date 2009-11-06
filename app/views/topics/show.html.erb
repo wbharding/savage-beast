@@ -63,7 +63,7 @@
   <%= '{count} voice(s)'[(count=@topic.voices.size)==1 ? :voice_count : :voices_count, number_with_delimiter(count)] %>
 </p>
 
-<%= pagination @posts %>
+<%= will_paginate @posts %>
 
 <a name="<%= dom_id @posts.first %>" id="<%= dom_id @posts.first %>">&nbsp;</a>
 
@@ -125,8 +125,7 @@
 <% end %>
 </table>
        
-<%= next_page @posts %>
-<%= pagination @posts %>
+<%= will_paginate @posts %>
 
 <% if logged_in? %>
 <div id="edit"></div>

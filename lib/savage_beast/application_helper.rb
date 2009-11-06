@@ -82,19 +82,6 @@ module SavageBeast
 			end
 		end
 
-		def pagination collection
-			if collection.page_count > 1
-				"<p class='pages'>" + 'Pages'[:pages_title] + ": <strong>" +
-				will_paginate(collection, :inner_window => 10, :next_label => "next"[], :prev_label => "previous"[]) +
-				"</strong></p>"
-			end
-		end
-
-		def next_page collection
-			unless collection.current_page == collection.page_count or collection.page_count == 0
-				"<p style='float:right;'>" + link_to("Next page"[], { :page => collection.current_page.next }.merge(params.reject{|k,v| k=="page"})) + "</p>"
-			end
-		end
 =end
 	end
 end

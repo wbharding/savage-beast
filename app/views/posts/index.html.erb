@@ -12,7 +12,7 @@
   <%= '{count} post(s) found'[(count=@posts.total_entries)==1 ? :post_count_found : :posts_count_found, number_with_delimiter(count)] %>
 </p>
 
-<%= pagination @posts %>
+<%= will_paginate @posts %>
 
 <table border="0" cellspacing="0" cellpadding="0" class="posts wide">
 <% for post in @posts do %>
@@ -50,5 +50,4 @@
 <% end %>
 </table>
 
-<%= next_page @posts %>
-<%= pagination @posts %>
+<%= will_paginate @posts %>
