@@ -33,7 +33,7 @@ module SavageBeast
 
 		def feed_icon_tag(title, url)
 			(@feed_icons ||= []) << { :url => url, :title => title }
-			link_to image_tag('feed-icon.png', :size => '14x14', :style => 'margin-right:5px', :alt => "Subscribe to #{title}", :plugin => "savage_beast"), url
+			link_to image_tag('savage_beast/feed-icon.png', :size => '14x14', :style => 'margin-right:5px', :alt => "Subscribe to #{title}"), url
 		end
 
 		def search_posts_title
