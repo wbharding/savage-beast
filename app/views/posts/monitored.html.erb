@@ -13,7 +13,7 @@
 
 <h1><%= @page_title %></h1>
 <p class="subtitle">
-  <%= feed_icon_tag @page_title, formatted_monitored_posts_path(:user_id => @user, :format => 'rss') %>
+  <%= feed_icon_tag @page_title, monitored_posts_path(:user_id => @user, :format => 'rss') %>
   <%= '{count} post(s) found'[(count=@posts.total_entries)==1 ? :post_count_found : :posts_count_found, number_with_delimiter(count)] %>
 </p>
 

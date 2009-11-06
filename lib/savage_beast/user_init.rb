@@ -16,7 +16,7 @@ module SavageBeast
 
 				#implement in your user model 
 				def display_name
-					"implement display_name in your user model"
+					"Foo Diddly"
 				end
 				
 				#implement in your user model 

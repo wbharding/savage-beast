@@ -1,5 +1,6 @@
 ActionView::Base.send :include, SavageBeast::AuthenticationSystem
 ActionController::Base.send :include, SavageBeast::AuthenticationSystem
+ApplicationHelper.send :include, SavageBeast::ApplicationHelper
 
 # FIX for engines model reloading issue in development mode
 if ENV['RAILS_ENV'] != 'production'

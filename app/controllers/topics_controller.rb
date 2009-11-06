@@ -62,7 +62,7 @@ class TopicsController < ApplicationController
 		if topic_saved && post_saved
 			respond_to do |format| 
 				format.html { redirect_to forum_topic_path(@forum, @topic) }
-				format.xml  { head :created, :location => formatted_topic_url(:forum_id => @forum, :id => @topic, :format => :xml) }
+				format.xml  { head :created, :location => topic_url(:forum_id => @forum, :id => @topic, :format => :xml) }
 			end
 		else
 			render :action => "new"

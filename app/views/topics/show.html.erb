@@ -58,7 +58,7 @@
 </h1>
 
 <p class="subtitle">
-  <%= feed_icon_tag @topic.title, formatted_forum_topic_path(@forum, @topic, :rss) %>
+  <%= feed_icon_tag @topic.title, forum_topic_path(@forum, @topic, :format => :rss) %>
   <%= '{count} post(s)'[(count=@topic.posts.size)==1 ? :post_count : :posts_count, number_with_delimiter(count)] %>, 
   <%= '{count} voice(s)'[(count=@topic.voices.size)==1 ? :voice_count : :voices_count, number_with_delimiter(count)] %>
 </p>
